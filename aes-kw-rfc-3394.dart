@@ -6,8 +6,6 @@ import 'package:pointycastle/block/modes/ecb.dart';
 
 class AesKwRfc3394 {
 
-  static String iv = "0xa6a6a6a6a6a6a6a6";
-
   static List<int> unwrap(String wrappedKeyBase64, String masterKeyBase64, {String ivHex = "0xa6a6a6a6a6a6a6a6"}) {
 
     final kek = base64.decode(masterKeyBase64);
